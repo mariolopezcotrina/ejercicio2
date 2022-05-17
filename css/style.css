@@ -1,0 +1,364 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+/*=========================================*/
+/*=============== HEADER ==================*/
+/*=========================================*/
+html{
+    scroll-behavior: smooth;
+    
+}
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 100px;
+    background: #4D4D5C;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    
+}
+.header{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo{
+    text-transform: uppercase;
+    color: #6cc091;
+    font-weight: 200;
+}
+.menu a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: .4s;
+}
+.menu .a{
+    color: #4bae77;
+}
+
+.item{
+    scroll-margin-top: 100px;
+}
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    transition: .4s;
+    display: none;
+
+}
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #6cc091;
+}
+#check{
+    display: none;
+}
+.clear{
+    height: 100px;
+}
+/*=========================================*/
+/*=============== BANNER ==================*/
+/*=========================================*/
+
+.banner{
+    
+    padding: 0 50px;
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    
+}
+/*poner una capa vacia o como sombreado con BEFORE*/
+.banner::before{
+    content: '';
+    background: rgba(77, 77, 92, .5);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+}
+.contenido-banner{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenido-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0;
+    color: #fff;
+}
+.contenido-banner span{
+    font-weight: 600;
+    color: #4bae77;
+}
+
+.boton-empezar{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #6cc091;
+    padding: 20px 40px;
+    align-self: baseline;/*nos ocupara el interior del boton*/
+    transition: all .4;
+}
+.boton-empezar:hover{
+    background-color: #6cc09070;
+}
+
+/*=========================================*/
+/*=============== PERSONA ==================*/
+/*=========================================*/
+
+.personas{
+    
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.personas img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+}
+.personas div{
+    padding: 30px 30px;
+    
+}
+.personas div h4{
+    color: #4D4D5C;
+    font-size: 20px;
+    margin: 15px 0;
+}
+.personas div p{
+    color: #4D4D5C87;
+}
+.boton-saber-mas{
+    display: inline-block;
+    text-decoration: none;
+    color: #6cc091;
+    padding: 10px 30px;
+    border: 3px solid #6cc091;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all .4s;
+}
+.boton-saber-mas:hover{
+    background-color: #6cc09070;
+    color: #4D4D5C;
+}
+
+/*=========================================*/
+/*=============== ICONOS ==================*/
+/*=========================================*/
+
+.iconos{
+    
+    background: rgba(77, 77, 92, .6);
+    
+}
+.contenido-iconos{
+    padding: 50px 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.contenido-iconos div{
+    flex: 1;
+    margin: 20px 0;
+    border-right: 2px solid rgba(255, 255, 255, .2);
+}
+#mobile{
+    border: none;
+}
+.contenido-iconos div i{
+    color: #6cc091;
+    font-size: 50px;
+}
+.contenido-iconos div h6{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0;
+}
+.contenido-iconos div p{
+    color: #4D4D5C87;
+    font-size: 15px;
+}
+.boton-iconos{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.iconos .info h3{
+    color: #fff;
+    border-left: 5px solid #fff;
+}
+/*=========================================*/
+/*=============== PORTAFOLIO ==============*/
+/*=========================================*/
+
+.portafolio {
+    width: 100%;
+    
+
+}
+.portafolio .contenido-folio{
+    width: 90%;
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    text-align: center;
+    
+    
+}
+.contenido-folio div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.contenido-folio div img{
+    width: 100%;
+}
+
+.contenido-folio div .boton-saber-mas{
+    position: relative;
+    top: -70px;
+}
+
+.info {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+.info h3 {
+    border-left: 5px solid #4bae77;
+    padding-left: 10px;
+    color: #4bae77;
+    margin-bottom: 15px;
+}
+.info p {
+    
+    color: #4D4D5C;
+    line-height: 1.7;
+}
+.boton-saber-mas{
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    background: #4d4d5c71;
+}
+.boton-saber-mas:hover{
+    
+    background: #4bae77;
+}
+
+/*=========================================*/
+/*=============== CONTACTO ================*/
+/*=========================================*/
+
+.contacto{
+    background-color: #6cc091;
+    padding: 50px 0;
+    color: #fff;
+}
+.contacto h4{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.contacto form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.datos-form{
+    display: flex;
+}
+.datos-form div{
+    padding: 10px;
+    flex: 1;
+}
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+form input,
+form textarea{
+    background-color: #6cc091;
+    border-radius: 10px;
+    border: 2px solid #8dcca9;
+    padding: 10px 5px;
+    outline: 0;
+    color: #fff;
+    width: 100%;
+}
+
+form input:focus,
+form textarea:focus{
+    border-color: #4bae77;
+    box-shadow: 0 0 0 1px #4bae77;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color: #fff;
+}
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.boton-formulario{
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    
+}
+.boton-formulario .boton-saber-mas{
+    width: 100%;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    transition: .4s; 
+}
+.boton-formulario .boton-saber-mas:hover{
+background-color: #4ba776ad;
+}
+
+/*=========================================*/
+/*=============== FOOTER   ================*/
+/*=========================================*/
+
+footer{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4D4D5C;
+    color: #cccccc4a;
+}

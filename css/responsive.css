@@ -1,0 +1,63 @@
+/*========= RESPONSIVE ====================*/
+@media(max-width: 768px){
+    /*======================== HEADER ===========================================*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        background-color: #6cc091;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: .8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu:hover,
+    .menu a:hover{
+        color: #4D4D5C;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    /*======================== PERSONA ===========================================*/
+
+    .personas{
+        flex-direction: column;
+    }
+
+    /*======================== ICONOS ===========================================*/
+
+    .iconos{
+        flex-direction: column;
+    }
+    .iconos .contenido-iconos{
+        flex-direction: column;
+    }
+    .iconos .contenido-iconos div{
+        border: none;
+    }
+    /*======================== PORTAFOLIO ===========================================*/
+    .portafolio .contenido-folio {
+        grid-template-columns: 100%;
+    }
+
+    /*======================== CONTACTO ===========================================*/
+    .datos-form{
+        flex-direction: column;
+    }
+
+}
