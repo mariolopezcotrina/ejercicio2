@@ -35,7 +35,7 @@
     }
     /*======================== PERSONA ===========================================*/
 
-    .personas{
+    .personas .content{
         flex-direction: column;
     }
 
